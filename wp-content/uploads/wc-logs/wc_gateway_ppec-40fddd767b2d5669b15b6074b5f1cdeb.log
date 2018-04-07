@@ -1,0 +1,122 @@
+04-07-2018 @ 16:22:16 - WC_Gateway_PPEC_Client::_request: remote request to https://api.paypal.com/nvp with params: Array
+(
+    [LOGOIMG] => 
+    [HDRIMG] => 
+    [PAGESTYLE] => 
+    [BRANDNAME] => HHP shop
+    [RETURNURL] => http://localhost/tmdt2/thanh-toan?woo-paypal-return=true
+    [CANCELURL] => http://localhost/tmdt2/gio-hang?woo-paypal-cancel=true
+    [ADDROVERRIDE] => 1
+    [LANDINGPAGE] => Login
+    [SOLUTIONTYPE] => Sole
+    [PAYMENTREQUEST_0_PAYMENTACTION] => sale
+    [PAYMENTREQUEST_0_ALLOWEDPAYMENTMETHOD] => InstantPaymentOnly
+    [PAYMENTREQUEST_0_INSURANCEAMT] => 0
+    [PAYMENTREQUEST_0_HANDLINGAMT] => 0
+    [PAYMENTREQUEST_0_CUSTOM] => 
+    [PAYMENTREQUEST_0_INVNUM] => 
+    [PAYMENTREQUEST_0_CURRENCYCODE] => VND
+    [PAYMENTREQUEST_0_AMT] => 2700000
+    [PAYMENTREQUEST_0_ITEMAMT] => 2700000
+    [PAYMENTREQUEST_0_SHIPPINGAMT] => 0
+    [PAYMENTREQUEST_0_TAXAMT] => 0
+    [PAYMENTREQUEST_0_SHIPDISCAMT] => 0
+    [NOSHIPPING] => 0
+    [PAYMENTREQUEST_0_SHIPTONAME] => Trần Kai
+    [PAYMENTREQUEST_0_SHIPTOSTREET] => Nguyễn Văn Cừ, An Hoà, Cần Thơ
+    [PAYMENTREQUEST_0_SHIPTOSTREET2] => 
+    [PAYMENTREQUEST_0_SHIPTOCITY] => Cần Thơ
+    [PAYMENTREQUEST_0_SHIPTOSTATE] => 
+    [PAYMENTREQUEST_0_SHIPTOZIP] => 900000
+    [PAYMENTREQUEST_0_SHIPTOCOUNTRYCODE] => VN
+    [L_PAYMENTREQUEST_0_NAME0] => Chuck Taylor One Star Pinstripe
+    [L_PAYMENTREQUEST_0_DESC0] => 
+    [L_PAYMENTREQUEST_0_QTY0] => 1
+    [L_PAYMENTREQUEST_0_AMT0] => 1700000
+    [L_PAYMENTREQUEST_0_NAME1] => Chuck Taylor All Star Classic
+    [L_PAYMENTREQUEST_0_DESC1] => 
+    [L_PAYMENTREQUEST_0_QTY1] => 1
+    [L_PAYMENTREQUEST_0_AMT1] => 1000000
+    [METHOD] => SetExpressCheckout
+    [VERSION] => 120.0
+    [USER] => 
+    [PWD] => 
+)
+
+04-07-2018 @ 16:22:16 - WC_Gateway_PPEC_Client::_request: returns error: Array
+(
+    [ACK] => Failure
+    [L_ERRORCODE0] => 3
+    [L_SHORTMESSAGE0] => Error in WC_Gateway_PPEC_Client::_request
+    [L_LONGMESSAGE0] => An error occurred while trying to connect to PayPal: cURL error 58: could not load PEM client certificate, OpenSSL error error:0906D06C:PEM routines:PEM_read_bio:no start line, (no key found, wrong pass phrase, or wrong file format?)
+    [L_SEVERITYCODE0] => Error
+)
+
+04-07-2018 @ 16:24:57 - WC_Gateway_PPEC_Client::_request: remote request to https://api.paypal.com/nvp with params: Array
+(
+    [LOGOIMG] => 
+    [HDRIMG] => 
+    [PAGESTYLE] => 
+    [BRANDNAME] => HHP shop
+    [RETURNURL] => http://localhost/tmdt2/thanh-toan?woo-paypal-return=true
+    [CANCELURL] => http://localhost/tmdt2/gio-hang?woo-paypal-cancel=true
+    [ADDROVERRIDE] => 1
+    [LANDINGPAGE] => Login
+    [SOLUTIONTYPE] => Sole
+    [PAYMENTREQUEST_0_PAYMENTACTION] => sale
+    [PAYMENTREQUEST_0_ALLOWEDPAYMENTMETHOD] => InstantPaymentOnly
+    [PAYMENTREQUEST_0_INSURANCEAMT] => 0
+    [PAYMENTREQUEST_0_HANDLINGAMT] => 0
+    [PAYMENTREQUEST_0_CUSTOM] => 
+    [PAYMENTREQUEST_0_INVNUM] => 
+    [PAYMENTREQUEST_0_CURRENCYCODE] => VND
+    [PAYMENTREQUEST_0_AMT] => 2700000
+    [PAYMENTREQUEST_0_ITEMAMT] => 2700000
+    [PAYMENTREQUEST_0_SHIPPINGAMT] => 0
+    [PAYMENTREQUEST_0_TAXAMT] => 0
+    [PAYMENTREQUEST_0_SHIPDISCAMT] => 0
+    [NOSHIPPING] => 0
+    [PAYMENTREQUEST_0_SHIPTONAME] => ++Trần Kai
+    [PAYMENTREQUEST_0_SHIPTOSTREET] => Nguyễn Văn Cừ, An Hoà, Cần Thơ
+    [PAYMENTREQUEST_0_SHIPTOSTREET2] => 
+    [PAYMENTREQUEST_0_SHIPTOCITY] => Cần Thơ
+    [PAYMENTREQUEST_0_SHIPTOSTATE] => 
+    [PAYMENTREQUEST_0_SHIPTOZIP] => 900000
+    [PAYMENTREQUEST_0_SHIPTOCOUNTRYCODE] => VN
+    [L_PAYMENTREQUEST_0_NAME0] => Chuck Taylor One Star Pinstripe
+    [L_PAYMENTREQUEST_0_DESC0] => 
+    [L_PAYMENTREQUEST_0_QTY0] => 1
+    [L_PAYMENTREQUEST_0_AMT0] => 1700000
+    [L_PAYMENTREQUEST_0_NAME1] => Chuck Taylor All Star Classic
+    [L_PAYMENTREQUEST_0_DESC1] => 
+    [L_PAYMENTREQUEST_0_QTY1] => 1
+    [L_PAYMENTREQUEST_0_AMT1] => 1000000
+    [METHOD] => SetExpressCheckout
+    [VERSION] => 120.0
+    [USER] => 
+    [PWD] => 
+)
+
+04-07-2018 @ 16:24:57 - WC_Gateway_PPEC_Client::_request: returns error: Array
+(
+    [ACK] => Failure
+    [L_ERRORCODE0] => 3
+    [L_SHORTMESSAGE0] => Error in WC_Gateway_PPEC_Client::_request
+    [L_LONGMESSAGE0] => An error occurred while trying to connect to PayPal: cURL error 58: could not load PEM client certificate, OpenSSL error error:0906D06C:PEM routines:PEM_read_bio:no start line, (no key found, wrong pass phrase, or wrong file format?)
+    [L_SEVERITYCODE0] => Error
+)
+
+04-07-2018 @ 16:30:22 - WC_Gateway_PPEC_IPS_Handler::maybe_received_credentials: returned back from IPS flow with parameters: Array
+(
+    [page] => wc-settings
+    [tab] => checkout
+    [section] => ppec_paypal
+    [env] => live
+    [wc_ppec_ips_admin_nonce] => 13ef1c29b3
+    [merchantId] => 67acc8428ee9a12045599607d95222c6
+    [merchantPayerId] => 2CLKVSWR2R9NY
+    [error] => true
+    [error_message] => Response from PayPal does not contain an api_credentials property
+)
+
+04-07-2018 @ 16:30:22 - WC_Gateway_PPEC_IPS_Handler::maybe_received_credentials: returned back from IPS flow with error: Response from PayPal does not contain an api_credentials property
