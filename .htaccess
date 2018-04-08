@@ -1,12 +1,37 @@
+# BEGIN Protection against DDoS
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /tmdt2/
+# Deny xmlrpc
+RewriteCond "%{REMOTE_HOST}/%{SERVER_ADDR}" !^(.+)/\1$
+RewriteRule ^xmlrpc.php(/.*)?$ "http\://localhost/tmdt2/404\.php" [R,L,NE]
+# Deny feeds
+RewriteCond "%{REMOTE_HOST}/%{SERVER_ADDR}" !^(.+)/\1$
+RewriteCond %{REQUEST_URI} ^(.*/)?feed(/.*)?$ [OR]
+RewriteCond %{QUERY_STRING} ^(.*&)?feed=.+
+RewriteRule .* "http\://localhost/tmdt2/404\.php" [R,L,NE]
+# Allow only countries
+SetEnvIf CF-IPCountry ^(VN) Targeted=1
+RewriteCond %{ENV:Targeted} !=1
+RewriteCond "%{REMOTE_HOST}/%{SERVER_ADDR}" !^(.+)/\1$
+RewriteRule .* "http\://localhost/tmdt2/404\.php" [R,L,NE]
+# Protect login
+RewriteCond "%{REMOTE_HOST}/%{SERVER_ADDR}" !^(.+)/\1$
+RewriteCond %{REQUEST_URI} "^/tmdt2/wp\-login\.php"
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{HTTP_COOKIE} !paddos_FsNXK=1 [NC]
+RewriteRule ^(.*)$ "http\://localhost/tmdt2/404\.php" [R,L,NE]
+</IfModule>
+# END Protection against DDoS
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /tmdt/
+RewriteBase /tmdt2/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /tmdt/index.php [L]
+RewriteRule . /tmdt2/index.php [L]
 </IfModule>
 
 # END WordPress
